@@ -17,7 +17,6 @@
     overflow: hidden;
 }
 
-
 #image-track {
     display: flex;
     gap: 4vmin;
@@ -33,4 +32,16 @@
     height: 56vmin;
     object-fit: cover;
     object-position: 100% center;
+}
+
+.logo {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
