@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.storbakgrunn {
+    background-image: url(bilder/bakgrunn-s1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.wholepage {
+    min-height: 100vh;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none;
+}
+
+#image-track>.image {
+    width: 70vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
