@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font/Formula1-Wide.otf') format('woff')
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'CustomFont', Arial, sans-serif;
+    margin-top: 55px;
+}
+
+h2 {
+    color: rgb(255, 0, 0);
+    font-family: 'CustomFont';
+    rotate: 90deg;
+    text-align: center;
+    width: 100px;
+    height: fit-content;
+    font-size: 40px;
+}
+
 .storbakgrunn {
     background-image: url(bilder/bakgrunn-s1.jpg);
     background-size: cover;
@@ -19,19 +42,19 @@
 
 #image-track {
     display: flex;
-    gap: 4vmin;
+    gap: 5vmin;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-5%, -50%);
     user-select: none;
 }
 
 #image-track>.image {
-    width: 90vmin;
+    width: 85vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: 100% center;
+    object-position: 100% center; 
 }
 
 .logo {
@@ -45,3 +68,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.tekstboks{
+    color: white;
+  	border: solid black;
+  	text-align: center;
+  	background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+      }
