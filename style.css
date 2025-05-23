@@ -32,7 +32,9 @@ h2 {
 
 h3 {
     font-family: 'CustomFont';
-
+    color: rgb(255, 0, 0);
+    font-size: 45px;
+    border: 3px solid yellow;
 }
 
 .storbakgrunn {
@@ -63,88 +65,95 @@ h3 {
     width: 85vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: 100% center; 
+    object-position: 100% center;
 }
 
 .logo {
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     height: auto;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tekstboks{
+.tekstboks {
     color: white;
-  	border: solid black;
-  	text-align: center;
-  	background-color: rgba(0, 0, 0, 0.5);
+    border: solid black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-      }
+}
 
-      nav {
-        display: flex;
-        justify-content: flex-end;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1;
-        height: 60px;
-        align-items: center;
-    }
-    
-    
-    nav {
-        background-color: rgb(255, 0, 0);
-        margin: 0 auto;
-    }
-    
-    nav a,
-    nav button{
-        background-color: inherit;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 1.5rem;
-        padding: 15px;
-        border: none;
-        font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif;
-        font-weight: 500;
-    }
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    align-items: center;
+}
 
-    .dropdown-content {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: rgb(255, 0, 0);
-        padding: 8px;
-        min-width: 160px;
-        z-index: 1;
-    
-    }
-    
-    .dropdown-content a {
-        font-size: 15px;
-        padding: 5px;
-        color: white;
-    }
 
-    /* red bull */
+nav {
+    background-color: rgb(255, 0, 0);
+    margin: 0 auto;
+}
 
-    .redbull {
-background-color: #001120 ;
-    }
+nav a,
+nav button {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    border: none;
+    font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
 
-    .redbull-logo {
-        width: 100;
-        height: 200px;
-    }
-    
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    padding: 8px;
+    min-width: 160px;
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+
+/* red bull */
+
+.redbull {
+    background-color: #001120;
+
+}
+
+.redbull-logo {
+    width: 100;
+    height: 200px;
+    padding: 50px;
+}
+
+.redbull-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
