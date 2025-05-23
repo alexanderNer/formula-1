@@ -14,7 +14,9 @@ h1 {
     font-size: 30px;
     text-align: center;
     font-family: 'CustomFont', Arial, sans-serif;
-    margin-top: 55px;
+    padding: 20px;
+    user-select: none;
+    margin-top: 650px;
 }
 
 h2 {
@@ -25,12 +27,19 @@ h2 {
     width: 100px;
     height: fit-content;
     font-size: 40px;
+    white-space: nowrap;
+}
+
+h3 {
+    font-family: 'CustomFont';
+
 }
 
 .storbakgrunn {
     background-image: url(bilder/bakgrunn-s1.jpg);
     background-size: cover;
     position: relative;
+    z-index: 2;
 }
 
 .wholepage {
@@ -50,7 +59,7 @@ h2 {
     user-select: none;
 }
 
-#image-track>.image {
+#image-track .image {
     width: 85vmin;
     height: 56vmin;
     object-fit: cover;
@@ -81,3 +90,61 @@ h2 {
     transform: translate(-50%, -50%);
     border-radius: 10px;
       }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        height: 60px;
+        align-items: center;
+    }
+    
+    
+    nav {
+        background-color: rgb(255, 0, 0);
+        margin: 0 auto;
+    }
+    
+    nav a,
+    nav button{
+        background-color: inherit;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 15px;
+        border: none;
+        font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(255, 0, 0);
+        padding: 8px;
+        min-width: 160px;
+        z-index: 1;
+    
+    }
+    
+    .dropdown-content a {
+        font-size: 15px;
+        padding: 5px;
+        color: white;
+    }
+
+    /* red bull */
+
+    .redbull {
+background-color: #001120 ;
+    }
+
+    .redbull-logo {
+        width: 100;
+        height: 200px;
+    }
+    
