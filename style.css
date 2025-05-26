@@ -149,11 +149,36 @@ nav button {
 .redbull-logo {
     width: 100;
     height: 200px;
-    padding: 50px;
+    padding: 35px;
 }
 
 .redbull-top {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img-drivers {
+    display: flex; /* Enable flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center the images (optional) */
+    width: 100%; /* Ensure it takes the full width of the container */
+    border: solid 2px red;
+    height: 500px;
+}
+
+.main {
+    width: 1000px;
+    height: 500px;
+    border: 3px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex; 
+    justify-content: center;  
+    min-height: 100vh; 
+    background-color: rgb(143, 142, 142); 
 }
