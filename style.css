@@ -9,6 +9,32 @@
     src: url('font/Formula1-Wide.otf') format('woff')
 }
 
+@media (max-width: 1324px) {
+    .img-drivers{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 730px){
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4{
+        font-size: 15px !important;
+    }
+
+    li{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px){
+    .redbull-logo{
+        height: 150px !important;
+    }
+}
+
 h1 {
     color: rgb(171, 171, 171);
     font-size: 40px;
@@ -33,7 +59,7 @@ h2 {
 h3 {
     font-family: 'CustomFont';
     color: rgb(255, 0, 0);
-    font-size: 45px;
+    font-size: 35px;
     border: 3px solid yellow;
 }
 
@@ -41,6 +67,19 @@ h4 {
     font-family: 'CustomFont';
     color: rgb(0, 0, 0);
     font-size: 30px;
+}
+
+h5{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    font-family: 'CustomFont', Arial, sans-serif;
+    padding: 20px;
+    user-select: none;
+}
+
+p{
+    padding: 10px;
 }
 
 .storbakgrunn {
@@ -152,21 +191,20 @@ nav button {
 }
 
 .img-drivers {
-    display: flex; 
-    border: solid 4px rgb(0, 0, 0);  
+    width: 100%; 
     box-sizing: border-box;
-    width: 100; 
-    height: 400px; 
-    justify-content: space-between;
-   
+    gap: 20px;
+    margin-bottom: 20px; 
+    display: flex;
 }
 
 .main {
-    height: 700px;
-    /* border: 3px solid yellow; */
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 100%; 
+    gap: 20px; 
 }
 
 .main-container {
@@ -177,31 +215,73 @@ nav button {
     padding: 20px;
 }
 
+
+.drivers {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%; 
+    border: solid 4px rgb(0, 0, 0);
+}
+
 .tekst {
     display: flex;
-    flex-direction: column;
-    padding: 5px;
-    align-items: center;
+    flex-direction: column; 
+    align-items: flex-start; 
     color: rgb(50, 50, 50);
+    align-items: center;
+}
+
+.drivers img {
+    height: 360px; 
+    border: 4px solid yellow; 
+    border-radius: 10px; 
+    padding: 5px;
+    object-fit: cover; 
 }
 
 li {
     padding: 20px;
 }
 
-.redbull .img-drivers img {
-    border: 4px solid yellow; 
-    border-radius: 10px; 
-    padding: 5px; 
-}
 
-.drivers {
-    display:flex;
-
+.driver1 .driver2 {
+    display: flex;
+    flex-direction: row;
 }
 
 .bilen {
-    height: 200px;
+    height: 750px;
     width: auto;
+    box-sizing: border-box;
+}
 
+.bil-bilde{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    }
+
+.rb21 {
+    background-image: url('bilder/f1 sideprofil/redbull-bil.jpg');
+}
+
+.hover-effect:hover {
+    filter: grayscale(50%);
+}
+
+.tekstboks {
+    color: white;
+    border: solid black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
