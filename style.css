@@ -224,7 +224,7 @@ p{
     padding: 3px;
   }
 
-/* red bull */
+/* mal for sidene */
 
 .mal {
     background-color: #001120;
@@ -240,21 +240,34 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 35px;
+    border: 3px solid white; 
+    font-family: 'CustomFont';
 }
 
 .mclaren {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
+    background-color: #ff9200;
     color: white;
 }
-.mclaren-tekst {
-    color: rgb(255, 255, 255);
-    font-family: 'CustomFont';
-    text-align: center;
-    font-size: 35px;
-    border: 3px solid yellow;
+
+.mercedes {
+    background-color: #04d1b1;
+    color: white;
+}
+
+.williams{
+    background-color: #1957b1;
+    color: white;
+}
+
+.redbull{
+    background-color: #0611ae;
+    color: white;
+}
+
+.ferrari {
+    background-color: #f70404;
+    color: white;
 }
 
 .img-drivers {
@@ -342,6 +355,14 @@ li {
 
 .mcl39{
     background-image: url(bilder/biler/mclaren-bil.jpeg);
+}
+
+.w16 {
+    background-image: url(bilder/biler/mercedes-bil.jpeg);
+}
+
+.fw47 {
+    background-image: url(bilder/biler/williams-bil.jpeg);
 }
 
 .hover-effect:hover {
