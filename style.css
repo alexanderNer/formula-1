@@ -36,6 +36,10 @@
     .sjofør{
         height: 250px !important;
     }
+    .drivers{
+        gap: 0 !important;
+        border: solid black 0px !important;
+    }
 }
 
 h1 {
@@ -222,21 +226,35 @@ p{
 
 /* red bull */
 
-.redbull {
+.mal {
     background-color: #001120;
-
 }
 
-.redbull-logo {
+.mal-logo {
     width: 100;
     height: 200px;
     padding: 35px;
 }
 
-.redbull-top {
+.top {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mclaren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+}
+.mclaren-tekst {
+    color: rgb(255, 255, 255);
+    font-family: 'CustomFont';
+    text-align: center;
+    font-size: 35px;
+    border: 3px solid yellow;
 }
 
 .img-drivers {
@@ -315,11 +333,15 @@ li {
     }
 
 .rb21 {
-    background-image: url('bilder/f1 sideprofil/redbull-bil.jpg');
+    background-image: url('bilder/biler/redbull-bil.jpg');
 }
 
 .f677 {
-    background-image: url(bilder/F677-ferrari.jpeg);
+    background-image: url(bilder/biler/F677-ferrari.jpeg);
+}
+
+.mcl39{
+    background-image: url(bilder/biler/mclaren-bil.jpeg);
 }
 
 .hover-effect:hover {
@@ -337,8 +359,4 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-}
-
-.sjofør{
-
 }
