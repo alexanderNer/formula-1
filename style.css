@@ -284,7 +284,7 @@ p{
 }
 
 .drivers img {
-    height: 360px; 
+    height: 320px; 
     border: 4px solid yellow; 
     border-radius: 10px; 
     padding: 5px;
@@ -316,6 +316,10 @@ li {
 
 .rb21 {
     background-image: url('bilder/f1 sideprofil/redbull-bil.jpg');
+}
+
+.f677 {
+    background-image: url(bilder/F677-ferrari.jpeg);
 }
 
 .hover-effect:hover {
