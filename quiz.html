@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <ul class="menu">
+            <li class="li-oppe"><a href="index.html">Hjem</a></li>
+            <li class="li-oppe"><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <div class=".quiz-bakgrunn bilde-1">
+        <div class="quiz-container">
+
+            <h6>Hva vet du?</h1>
+
+                <form id="quiz-form">
+                    <div class="question">
+                        <h6 class="quiz-tekst">1. Hva er hovedstaden i Norge?</h6>
+                        <label><input type="radio" name="q1" value="riktig"> Oslo</label>
+                        <label><input type="radio" name="q1" value="feil"> Bergen</label>
+                        <label><input type="radio" name="q1" value="feil"> Trondheim</label>
+                    </div>
+
+                    <div class="question">
+                        <h6 class="quiz-tekst">2. Hvor mange bein har en edderkopp?</h6>
+                        <label><input type="radio" name="q2" value="feil"> 6</label>
+                        <label><input type="radio" name="q2" value="riktig"> 8</label>
+                        <label><input type="radio" name="q2" value="feil"> 10</label>
+                    </div>
+
+                    <div class="question">
+                        <h6 class="quiz-tekst">3. Hvilket språk snakker man i Brasil?</h6>
+                        <label><input type="radio" name="q3" value="feil"> Spansk</label>
+                        <label><input type="radio" name="q3" value="riktig"> Portugisisk</label>
+                        <label><input type="radio" name="q3" value="feil"> Fransk</label>
+                    </div>
+        </div>
+        <div class=".quiz-bakgrunn bilde-2">
+            <div class="quiz-container">
+                <div class="question">
+                    <h6 class="quiz-tekst">4. Hvilket språk snakker man i Brasil?</h6>
+                    <label><input type="radio" name="q4" value="feil"> Spansk</label>
+                    <label><input type="radio" name="q4" value="riktig"> Portugisisk</label>
+                    <label><input type="radio" name="q4" value="feil"> Fransk</label>
+                </div>
+
+                <div class="question">
+                    <h6 class="quiz-tekst">5. Hvilket språk snakker man i Brasil?</h6>
+                    <label><input type="radio" name="q5" value="feil"> Spansk</label>
+                    <label><input type="radio" name="q5" value="riktig"> Portugisisk</label>
+                    <label><input type="radio" name="q5" value="feil"> Fransk</label>
+                </div>
+
+                <div class="question">
+                    <h6 class="quiz-tekst">6. Hvilket språk snakker man i Brasil?</h6>
+                    <label><input type="radio" name="q6" value="feil"> Spansk</label>
+                    <label><input type="radio" name="q6" value="riktig"> Portugisisk</label>
+                    <label><input type="radio" name="q6" value="feil"> Fransk</label>
+                </div>
+                <div class="question">
+                    <h6 class="quiz-tekst">. Hvilket språk snakker man i Brasil?</h6>
+                    <label><input type="radio" name="q7" value="feil"> Spansk</label>
+                    <label><input type="radio" name="q7" value="riktig"> Portugisisk</label>
+                    <label><input type="radio" name="q7" value="feil"> Fransk</label>
+                </div>
+
+                <button type="button" onclick="sjekkSvar()"> Send inn</button>
+                <div id="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
