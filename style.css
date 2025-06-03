@@ -10,40 +10,75 @@
 }
 
 @media (max-width: 1324px) {
-    .img-drivers{
+    .img-drivers {
         flex-direction: column;
     }
 }
 
-@media (max-width: 730px){
+@media(max-width: 934px) {
+    .mal-logo {
+        height: 140px !important;
+    }
+
+}
+
+@media (max-width: 730px) {
     h3 {
         font-size: 20px !important;
     }
 
-    h4{
-        font-size: 15px !important;
+    h4 {
+        font-size: 14px !important;
     }
 
-    li{
+    li {
         font-size: 13px;
+        padding: 10px !important;
+    }
+
+    .top {
+        font-size: 15px !important;
     }
 }
 
-@media (max-width: 600px){
-    .redbull-logo{
+@media (max-width: 600px) {
+    .redbull-logo {
         height: 150px !important;
     }
-    .sjofør{
+
+    .sjofør {
         height: 250px !important;
     }
-    .drivers{
+
+    .drivers {
         gap: 0 !important;
         border: solid black 0px !important;
     }
 }
 
+@media (max-width: 510px) {
+    .drivers img {
+        height: 150px !important;
+    }
+
+    /* .h {
+        font-size: 13px !important;
+    } */
+    .top {
+        font-size: 10px !important;
+    }
+
+    .mal-logo {
+        height: 125px !important;
+    }
+
+    .h4 {
+        font-size: 13px;
+    }
+}
+
 h1 {
-    color: rgb(171, 171, 171);
+    color: rgb(229 229 229);
     text-align: center;
     font-family: 'CustomFont', Arial, sans-serif;
     padding: 20px;
@@ -52,7 +87,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 0, 0);
+    color: rgb(229 229 229);
     font-family: 'CustomFont';
     rotate: 90deg;
     text-align: center;
@@ -72,10 +107,9 @@ h3 {
 h4 {
     font-family: 'CustomFont';
     color: rgb(0, 0, 0);
-    font-size: 25px;
 }
 
-h5{
+h5 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     text-align: center;
@@ -84,14 +118,14 @@ h5{
     user-select: none;
 }
 
-h6{
+h6 {
     color: rgb(255, 255, 255);
     font-family: 'CustomFont', sans-serif;
     font-size: 40px;
     text-align: center;
 }
 
-p{
+p {
     padding: 10px;
 }
 
@@ -146,9 +180,9 @@ p{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  
-  .menu {
+}
+
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -160,72 +194,72 @@ p{
     border-radius: 8px;
     overflow: hidden;
     z-index: 3;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     border-bottom: 1px solid #444;
-  }
-  
-  .menu li:last-child {
+}
+
+.menu li:last-child {
     border-bottom: none;
-  }
-  
-  .menu a {
+}
+
+.menu a {
     display: block;
     padding: 12px 20px;
     color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
-  }
-  
-  .menu a:hover {
+}
+
+.menu a:hover {
     background-color: #555;
-  }
-  
-  .menu-icon {
+}
+
+.menu-icon {
     font-size: 30px;
     color: white;
     cursor: pointer;
     user-select: none;
-  }
-  
-  #menu-toggle {
-    display: none;
-  }
-  
-  #menu-toggle:checked + .menu-icon + .menu {
-    display: block;
-  }
-  
-  @media (min-width: 700px) {
-    .menu-icon {
-      display: none;
-    }
-  
-    .menu {
-      display: flex;
-      position: static;
-      background-color: transparent;
-    }
-  
-    .menu li {
-      border: none;
-    }
-  
-    .menu a {
-      padding: 10px 15px;
-      color: rgb(0, 0, 0);
-    }
-  
-    .menu a:hover {
-      background-color: #444;
-    }
-  }
+}
 
-  .li-oppe {
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked+.menu-icon+.menu {
+    display: block;
+}
+
+@media (min-width: 700px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        background-color: transparent;
+    }
+
+    .menu li {
+        border: none;
+    }
+
+    .menu a {
+        padding: 10px 15px;
+        color: rgb(0, 0, 0);
+    }
+
+    .menu a:hover {
+        background-color: #444;
+    }
+}
+
+.li-oppe {
     padding: 3px;
-  }
+}
 
 /* mal for sidene */
 
@@ -234,7 +268,6 @@ p{
 }
 
 .mal-logo {
-    width: 100;
     height: 200px;
     padding: 35px;
 }
@@ -244,7 +277,7 @@ p{
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    border: 3px solid white; 
+    border: 3px solid white;
     font-family: 'CustomFont';
 }
 
@@ -259,12 +292,12 @@ p{
     color: rgb(0, 0, 0);
 }
 
-.williams{
+.williams {
     background-color: #1957b1;
     color: white;
 }
 
-.redbull{
+.redbull {
     background-color: #0611ae;
     color: white;
 }
@@ -300,56 +333,56 @@ p{
 }
 
 .img-drivers {
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box;
     gap: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     display: flex;
 }
 
 .main {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
-    height: 100%; 
-    gap: 20px; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 20px;
 }
 
 .main-container {
-    display: flex; 
-    justify-content: center;  
-    min-height: 100vh; 
-    background-color: rgb(143, 142, 142); 
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(143, 142, 142);
     padding: 20px;
 }
 
 
 .drivers {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: space-between; 
-    gap: 20px; 
-    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
     border: solid 4px rgb(0, 0, 0);
     padding: 10px;
 }
 
 .tekst {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     color: rgb(50, 50, 50);
     align-items: center;
 }
 
 .drivers img {
-    height: 300px; 
-    border: 4px solid yellow; 
-    border-radius: 10px; 
+    height: 300px;
+    border: 4px solid yellow;
+    border-radius: 10px;
     padding: 5px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 
@@ -369,12 +402,12 @@ li {
     box-sizing: border-box;
 }
 
-.bil-bilde{
+.bil-bilde {
     width: 100%;
     height: 100vh;
     background-size: cover;
     position: relative;
-    }
+}
 
 .rb21 {
     background-image: url('bilder/biler/redbull-bil.jpg');
@@ -384,7 +417,7 @@ li {
     background-image: url(bilder/biler/F677-ferrari.jpeg);
 }
 
-.mcl39{
+.mcl39 {
     background-image: url(bilder/biler/mclaren-bil.jpeg);
 }
 
@@ -404,11 +437,11 @@ li {
     background-image: url(bilder/biler/kick-sauber-bil.jpeg);
 }
 
-.vf-25{
+.vf-25 {
     background-image: url(bilder/biler/haas-bil.jpg);
 }
 
-.amr25{
+.amr25 {
     background-image: url(bilder/biler/aston-martin-bil.jpg);
 }
 
@@ -425,7 +458,6 @@ li {
     border: solid black;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
